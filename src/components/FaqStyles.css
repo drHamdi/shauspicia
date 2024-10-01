@@ -16,6 +16,35 @@
     font-size: 28px;
     padding: 1rem 0;
 }
+.section-faq p, .section-faq span, .section-faq h3, .section-faq h5 {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Effet hover pour le texte de la balise <p> */
+.section-faq p:hover {
+    transform: translateX(10px); /* Translation horizontale vers la droite */
+    color: #28a745; /* Changement de couleur lors du hover */
+}
+
+/* Effet hover pour le texte dans la balise <span> */
+.section-faq span:hover {
+    transform: translateY(-5px); /* Translation verticale vers le haut */
+    color: #28a745; /* Changement de couleur lors du hover */
+}
+
+/* Effet hover pour le texte des balises <h3> */
+.section-faq h3:hover {
+    transform: translateY(-10px); /* Translation verticale vers le haut */
+    color: #28a745; /* Changement de couleur lors du hover */
+}
+
+/* Effet hover pour le texte des balises <h5> */
+.section-faq h5:hover {
+    transform: translateX(5px); /* Translation horizontale vers la droite */
+    color: #ffc107; /* Changement de couleur lors du hover */
+}
+
 
 .section-faq .col-1 p {
     color: var(--grey);

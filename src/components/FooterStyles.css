@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color: var(--darkgrey);
+    background: linear-gradient(to right, #2C3E50  0%, #2C3E50 50%, #A57213 100%);
 }
 
 .footer .container {

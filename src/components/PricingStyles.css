@@ -1,6 +1,7 @@
 .pricing {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 1rem ;
+    background-color: white;
 }
 
 .pricing .container {
@@ -8,7 +9,11 @@
     padding: 1rem;
     margin: auto;
     overflow: hidden;
+    
 }
+
+
+
 
 .pricing .top-content {
     display: grid;
@@ -20,13 +25,21 @@
 .pricing .top-content h2 {
     font-size: 38px;
     padding-bottom: .5rem;
+    color:#003366 ;
+}
+.btn-div {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
 }
 
 .pricing .top-content span {
-    color: var(--primary);
+    color: #003366 ;
 }
 .pricing .top-content p {
-    color: var(--grey);
+    color: #003366;
+}
+.pricing .card p {
+    color: #003366;
 }
 
 .pricing .bottom-content {
@@ -64,6 +77,46 @@
     font-size: 28px;
     margin: .7rem;
 }
+.pricing h2, .pricing h3, .pricing p, .pricing span {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Effet hover pour le titre h2 */
+.pricing h2:hover {
+    transform: translateY(-10px); /* Translation vers le haut */
+    color: #28a745; /* Couleur verte lors du hover */
+}
+
+/* Effet hover pour les titres h3 */
+.pricing h3:hover {
+    transform: translateX(10px); /* Translation horizontale vers la droite */
+    color: #28a745; /* Changement de couleur en rouge orangé */
+}
+
+/* Effet hover pour les paragraphes <p> */
+.pricing p:hover {
+    transform: translateX(5px); /* Translation horizontale légère */
+    color: #007bff; /* Changement de couleur en bleu */
+}
+
+/* Effet hover pour les balises <span> */
+.pricing span:hover {
+    transform: translateY(-5px); /* Translation verticale légère vers le haut */
+    color: #ffc107; /* Changement de couleur en jaune doré */
+}
+
+/* Effet hover pour les boutons */
+.pricing button:hover {
+    transform: scale(1.1); /* Agrandissement léger */
+    background-color: #ffc107; /* Changement de couleur de fond */
+    color: #ffc107; /* Changement de la couleur du texte */
+    transition: all 0.3s ease;
+}
+
+/* Effet hover pour les cartes */
+
+
 
 @media screen and (max-width:960px) {
     .pricing .top-content {
